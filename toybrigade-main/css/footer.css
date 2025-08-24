@@ -1,0 +1,126 @@
+/* Angled Footer */
+.footer {
+  position: relative;
+  background-color: #fff0f6; /* pastel pink */
+  color: #333;
+  padding-top: 5rem;
+  padding-bottom: 3rem;
+}
+
+/* Base card style */
+.footer-card {
+  background-color: #fff0f6; /* lighter pastel pink */
+  padding: 1.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  transform: rotate(-1.5deg); /* small angled effect */
+  transition: transform 0.3s ease, box-shadow 0.3s ease, margin-top 0.3s ease;
+}
+
+/* Alternate rotation for variety */
+.footer-card:nth-child(even) {
+  transform: rotate(1.5deg);
+}
+
+/* Staggered vertical positioning */
+.footer-card:nth-child(1) {
+  margin-top: 0px;
+  background-color: #ffe4e1; /* soft pink */
+}
+.footer-card:nth-child(2) {
+  margin-top: 20px;
+  background-color: #fff1e6; /* soft peach */
+
+}
+.footer-card:nth-child(3) {
+  margin-top: 40px;
+  background-color: #e6f7ff; /* soft sky blue */
+}
+.footer-card:nth-child(4) {
+  margin-top: 60px;
+  background-color: #fff0f5; /* soft lavender */
+}
+
+/* Hover effect */
+.footer-card:hover {
+  transform: rotate(0deg) translateY(-12px);
+  box-shadow: 0 12px 24px rgba(0,0,0,0.15);
+}
+
+
+/* Footer Logo */
+.footer-logo {
+  max-width: 100%;
+}
+
+/* Small Text Styling */
+.footer p.small, .footer .small {
+  font-family: 'Baloo 2', cursive;
+  color: #666;
+}
+
+/* Border Top */
+.footer .border-top {
+  border-color: rgba(0,0,0,0.05);
+}
+/* Social icons */
+.social-icons a {
+  font-size: 1.2rem;
+  margin-right: 10px;
+  color: #ff4081;
+  transition: transform 0.3s, color 0.3s;
+}
+
+.social-icons a:hover {
+  transform: translateY(-3px);
+  color: #ff7043;
+}
+
+
+
+
+.footer-title {
+  font-family: 'Fredoka One', cursive;
+  font-size: 1.2rem; /* bigger than before */
+  color: #525050;
+  margin-bottom: 1rem;
+}
+
+/* Footer links */
+.footer-link {
+  font-size: 1rem; /* slightly larger */
+  color: #ff4081;
+  text-decoration: none;
+  display: block;
+  margin-bottom: 0.5rem;
+  transition: color 0.3s, transform 0.3s;
+}
+
+.footer-link:hover {
+  color: #ff7043;
+  text-decoration: underline;
+  transform: translateX(4px); /* playful hover effect */
+  color: #ff6180; /* playful pink highlight */
+}
+/* Optional: adjust small devices for less extreme angle */
+@media (max-width: 768px) {
+  .footer {
+    clip-path: polygon(0 10%, 100% 0%, 100% 100%, 0% 100%);
+  }
+}
+
+footer.footer .footer-link:hover {
+  color: #ba68c8; /* pastel purple hover */
+  text-decoration: underline;
+  transition: 0.3s;
+}
+
+footer.footer .social-link:hover {
+  color: #ffb74d; /* pastel orange */
+  transition: 0.3s;
+}
+
+/* Footer */
+footer.footer {
+  background-color: #f3e5f5; /* pastel lavender */
+}

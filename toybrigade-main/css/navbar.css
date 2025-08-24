@@ -1,0 +1,62 @@
+/* Buttons */
+.btn-pastel {
+  font-size: 1rem;     /* slightly bigger text */
+  font-family: 'Fredoka One', cursive; /* ✅ changed */
+  padding: 10px 24px;  /* more padding for larger button */
+  background-color: #ffd54f; /* pastel yellow */
+  border: none;
+  color: #333;
+  font-weight: bold;
+  border-radius: 25px;
+  transition: 0.3s ease;
+  text-shadow: 2px 2px #ffe082; /* brighter splice on hover */
+}
+.btn-pastel:hover {
+  background-color: #ffb74d;
+  color: white;
+  text-shadow: 2px 2px #ffcc80; /* splice effect */
+}
+/* Navbar Links */
+.playful-nav .nav-link {
+  font-family: 'Fredoka One', cursive; /* ✅ changed */
+  font-weight: 600;
+  margin-right: 16px; /* more spacing */
+  font-size: 1.1rem;  /* bigger text */
+  color: #555;
+  text-shadow: 2px 2px #ffd54f; /* pastel yellow splice */
+}
+.playful-nav .nav-link:hover {
+  color: #ff7043 !important;
+  text-shadow: 2px 2px #ffe082; /* brighter splice on hover */
+}
+
+
+/* Navbar Dropdown Styling */
+.navbar .dropdown-menu {
+  background-color: #fdf1f7; /* pastel background */
+  border: none;
+  border-radius: 15px;
+  padding: 0.5rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.navbar .dropdown-item {
+  font-family: 'Fredoka One', sans-serif;
+  font-size: 1rem;
+  color: #444;
+  padding: 0.75rem 1.2rem;
+  border-radius: 10px;
+  transition: all 0.2s ease-in-out;
+}
+
+.navbar .dropdown-item:hover {
+  background-color: #ffe4ec; /* soft hover pastel */
+  color: #d63384; /* playful pink text */
+  transform: translateX(4px); /* fun movement */
+}
+
+/* Fix alignment with icons */
+.navbar .dropdown-item span,
+.navbar .dropdown-item i {
+  margin-right: 8px;
+}

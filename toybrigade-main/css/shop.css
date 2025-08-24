@@ -1,0 +1,59 @@
+/* Shop Hero Section */
+.shop-hero {
+  height: 450px; /* Adjust height */
+  overflow: hidden;
+  position: relative;
+}
+
+.shop-hero .hero-img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  filter: brightness(60%); /* Darken image slightly */
+}
+
+
+
+.shop-hero .hero-text {
+  z-index: 2;
+}
+
+.shop-hero .hero-text h1,
+.shop-hero .hero-text p {
+  color: #fff;
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
+}
+
+.shop-hero .btn-pastel {
+  z-index: 2;
+  position: relative;
+}
+
+@media (max-width: 768px) {
+  .shop-hero .hero-overlay {
+    clip-path: polygon(0 0, 100% 0, 100% 95%, 0 100%);
+  }
+}
+
+.hover-scale {
+  border-radius: 15px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.hover-scale:hover {
+  transform: scale(1.05);
+  box-shadow: 0 12px 20px rgba(0,0,0,0.15);
+}
+
+
+.btn-pastel {
+  background-color: #ffd6a5;    /* Warm pastel */
+  color: #333;
+  border: none;
+  transition: transform 0.3s, background-color 0.3s;
+}
+
+.btn-pastel:hover {
+  background-color: #ffb347;    /* Slightly darker pastel on hover */
+  transform: translateY(-3px);  /* Subtle lift effect */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
